@@ -2,26 +2,14 @@
  "signatures": [
   {
    "keyid": "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93",
-   "sig": "30460221008cd5cd46ab4dd4cac258434d7139b90ed87a5ed2681fca82953128cdca3f057e02210081277600aedb0566aee395f8842be32305f1b0d2c48c127f17adbc4643a00709"
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "root",
   "consistent_snapshot": true,
-  "expires": "2024-08-20T13:30:02Z",
+  "expires": "2024-08-20T13:47:56Z",
   "keys": {
-   "230e212616274a4195cdc28e9fce782c20e6c720f1a811b40f98228376bdd3ac": {
-    "keyid_hash_algorithms": [
-     "sha256",
-     "sha512"
-    ],
-    "keytype": "ecdsa",
-    "keyval": {
-     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELrWvNt94v4R085ELeeCMxHp7PldF\n0/T1GxukUh2ODuggLGJE0pc1e8CSBf6CS91Fwo9FUOuRsjBUld+VqSyCdQ==\n-----END PUBLIC KEY-----\n"
-    },
-    "scheme": "ecdsa-sha2-nistp256",
-    "x-tuf-on-ci-online-uri": "gcpkms://timstamp-keyid"
-   },
    "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93": {
     "keytype": "ecdsa",
     "keyval": {
@@ -30,17 +18,14 @@
     "scheme": "ecdsa-sha2-nistp256",
     "x-tuf-on-ci-keyowner": "@jku"
    },
-   "923bb39e60dd6fa2c31e6ea55473aa93b64dd4e53e16fbe42f6a207d3f97de2d": {
-    "keyid_hash_algorithms": [
-     "sha256",
-     "sha512"
-    ],
-    "keytype": "ecdsa",
+   "a796e4a3400c89c3184f97762041510e1b7b550431989ea773e6a588cbe6071b": {
+    "keytype": "sigstore-oidc",
     "keyval": {
-     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEWRiGr5+j+3J5SsH+Ztr5nE2H2wO7\nBV+nO3s93gLca18qTOzHY1oWyAGDykMSsGTUBSt9D+An0KfKsD2mfSM42Q==\n-----END PUBLIC KEY-----\n"
+     "identity": "https://github.com/jku/root-signing-test/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
     },
-    "scheme": "ecdsa-sha2-nistp256",
-    "x-tuf-on-ci-online-uri": "gcpkms://timestamp-keyid"
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
    }
   },
   "roles": {
@@ -52,7 +37,7 @@
    },
    "snapshot": {
     "keyids": [
-     "230e212616274a4195cdc28e9fce782c20e6c720f1a811b40f98228376bdd3ac"
+     "a796e4a3400c89c3184f97762041510e1b7b550431989ea773e6a588cbe6071b"
     ],
     "threshold": 1,
     "x-tuf-on-ci-expiry-period": 91,
@@ -66,11 +51,11 @@
    },
    "timestamp": {
     "keyids": [
-     "923bb39e60dd6fa2c31e6ea55473aa93b64dd4e53e16fbe42f6a207d3f97de2d"
+     "a796e4a3400c89c3184f97762041510e1b7b550431989ea773e6a588cbe6071b"
     ],
     "threshold": 1,
-    "x-tuf-on-ci-expiry-period": 91,
-    "x-tuf-on-ci-signing-period": 35
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
    }
   },
   "spec_version": "1.0",
