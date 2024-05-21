@@ -1,5 +1,9 @@
 {
  "signatures": [
+  {
+   "keyid": "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93",
+   "sig": ""
+  }
  ],
  "signed": {
   "_type": "targets",
@@ -10,7 +14,8 @@
      "keyval": {
       "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEohqIdE+yTl4OxpX8ZxNUPrg3SL9H\nBDnhZuceKkxy2oMhUOxhWweZeG3bfM1T4ZLnJimC6CAYVU5+F5jZCoftRw==\n-----END PUBLIC KEY-----\n"
      },
-     "scheme": "ecdsa-sha2-nistp256"
+     "scheme": "ecdsa-sha2-nistp256",
+     "x-tuf-on-ci-keyowner": "@jku"
     }
    },
    "roles": [
@@ -27,7 +32,7 @@
     }
    ]
   },
-  "expires": "2024-09-12T06:13:15Z",
+  "expires": "2024-08-20T13:24:17Z",
   "spec_version": "1.0",
   "targets": {
    "artifact.pub": {
@@ -135,6 +140,8 @@
     "length": 7014
    }
   },
-  "version": 9
+  "version": 10,
+  "x-tuf-on-ci-expiry-period": 91,
+  "x-tuf-on-ci-signing-period": 35
  }
 }
