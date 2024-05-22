@@ -20,7 +20,7 @@ jobs:
         uses: jku/tuf-on-ci/actions/test-repository@fix-test-repo # test bug fix
         with:
           metadata_url: https://jku.github.io/root-signing-test/
-          valid_days: 3
+          valid_days: 1
           offline_valid_days: 30
 
   custom-smoke-test:
