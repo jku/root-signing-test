@@ -19,7 +19,7 @@ jobs:
         run: cp metadata/root_history/10.root.json ./root.json
 
       - name: Smoke test TUF-on-CI repository with a TUF client
-        uses: jku/tuf-on-ci/actions/test-repository@use-delegation-tree-in-build-repository # test bug fix
+        uses: jku/tuf-on-ci/actions/test-repository@fix-test-repo # test bug fix
 
   update-issue:
     runs-on: ubuntu-latest
