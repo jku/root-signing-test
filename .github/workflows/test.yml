@@ -14,8 +14,10 @@ jobs:
     permissions:
       contents: read # for checking out the repository
     steps:
-      - run: curl https://jku.github.io/root-signing-test/metadata/10.root.json -o root.json
-      
+      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - name: Set initial root.json for the test
+        run: cp metadata/root_history/10.root.json ./root.json
+
       - name: Smoke test TUF-on-CI repository with a TUF client
         uses: theupdateframework/tuf-on-ci/actions/test-repository@ebf63d46b20e8c019e7752f8fb57c28931f96cfc # v0.9.0
 
