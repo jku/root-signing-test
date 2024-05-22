@@ -14,9 +14,9 @@ jobs:
   online-sign:
     runs-on: ubuntu-latest
     permissions:
-      id-token: write # for OIDC identity access
-      contents: write # for commiting snapshot/timestamp changes
-      actions: write # for dispatching publish workflow
+      id-token: 'write' # for OIDC identity access
+      contents: 'write' # for commiting snapshot/timestamp changes
+      actions: 'write' # for dispatching publish workflow
     steps:
       - id: online-sign
         uses: theupdateframework/tuf-on-ci/actions/online-sign@ebf63d46b20e8c019e7752f8fb57c28931f96cfc # v0.9.0
@@ -31,7 +31,7 @@ jobs:
     needs: [online-sign]
     if: always() && !cancelled()
     permissions:
-      issues: write # for modifying Issues
+      issues: 'write' # for modifying Issues
     steps:
       - name: Update the issue for the workflow
         uses: theupdateframework/tuf-on-ci/actions/update-issue@ebf63d46b20e8c019e7752f8fb57c28931f96cfc # v0.9.0
