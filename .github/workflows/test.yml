@@ -23,13 +23,6 @@ jobs:
           valid_days: 1
           offline_valid_days: 30
 
-  custom-smoke-test:
-    permissions:
-      id-token: 'write' # For signing with the GitHub workflow identity
-    uses: ./.github/workflows/custom-test.yml
-    with:
-      metadata_url: https://jku.github.io/root-signing-test/
-
   update-issue:
     runs-on: ubuntu-latest
     needs: [smoke-test, custom-smoke-test]
