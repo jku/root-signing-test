@@ -1,43 +1,58 @@
 {
  "signatures": [
   {
-   "keyid": "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93",
-   "sig": "3045022004d8529cf37035d4e43b431706d66d1b1e171e6c4e05d450a129fa35c3da5167022100cf775d0feb06c0874d77b1e8efc35df314f526773dbc51ea1185b9d7b0c19aa2"
+   "keyid": "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81",
+   "sig": ""
   }
  ],
  "signed": {
   "_type": "root",
   "consistent_snapshot": true,
-  "expires": "2024-08-20T13:47:56Z",
+  "expires": "2024-08-22T13:14:29Z",
   "keys": {
-   "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93": {
+   "8feed397521524509ff5e37515062889a75dbf2bbd2841171110af06b9865fb1": {
+    "keyid_hash_algorithms": [
+     "sha256",
+     "sha512"
+    ],
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEWRiGr5+j+3J5SsH+Ztr5nE2H2wO7\nBV+nO3s93gLca18qTOzHY1oWyAGDykMSsGTUBSt9D+An0KfKsD2mfSM42Q==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-online-uri": "gcpkms://timestamp-keyid"
+   },
+   "9f06fd10dec8198d1b27eea17e473b7569362713a5eb3c409749c11e5599ba81": {
+    "keyid_hash_algorithms": [
+     "sha256",
+     "sha512"
+    ],
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAELrWvNt94v4R085ELeeCMxHp7PldF\n0/T1GxukUh2ODuggLGJE0pc1e8CSBf6CS91Fwo9FUOuRsjBUld+VqSyCdQ==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-online-uri": "gcpkms://timstamp-keyid"
+   },
+   "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81": {
     "keytype": "ecdsa",
     "keyval": {
      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEohqIdE+yTl4OxpX8ZxNUPrg3SL9H\nBDnhZuceKkxy2oMhUOxhWweZeG3bfM1T4ZLnJimC6CAYVU5+F5jZCoftRw==\n-----END PUBLIC KEY-----\n"
     },
     "scheme": "ecdsa-sha2-nistp256",
     "x-tuf-on-ci-keyowner": "@jku"
-   },
-   "a796e4a3400c89c3184f97762041510e1b7b550431989ea773e6a588cbe6071b": {
-    "keytype": "sigstore-oidc",
-    "keyval": {
-     "identity": "https://github.com/jku/root-signing-test/.github/workflows/online-sign.yml@refs/heads/main",
-     "issuer": "https://token.actions.githubusercontent.com"
-    },
-    "scheme": "Fulcio",
-    "x-tuf-on-ci-online-uri": "sigstore:"
    }
   },
   "roles": {
    "root": {
     "keyids": [
-     "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93"
+     "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81"
     ],
     "threshold": 1
    },
    "snapshot": {
     "keyids": [
-     "a796e4a3400c89c3184f97762041510e1b7b550431989ea773e6a588cbe6071b"
+     "9f06fd10dec8198d1b27eea17e473b7569362713a5eb3c409749c11e5599ba81"
     ],
     "threshold": 1,
     "x-tuf-on-ci-expiry-period": 91,
@@ -45,17 +60,17 @@
    },
    "targets": {
     "keyids": [
-     "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93"
+     "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81"
     ],
     "threshold": 1
    },
    "timestamp": {
     "keyids": [
-     "a796e4a3400c89c3184f97762041510e1b7b550431989ea773e6a588cbe6071b"
+     "8feed397521524509ff5e37515062889a75dbf2bbd2841171110af06b9865fb1"
     ],
     "threshold": 1,
-    "x-tuf-on-ci-expiry-period": 2,
-    "x-tuf-on-ci-signing-period": 1
+    "x-tuf-on-ci-expiry-period": 91,
+    "x-tuf-on-ci-signing-period": 35
    }
   },
   "spec_version": "1.0",
