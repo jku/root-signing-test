@@ -22,7 +22,7 @@ jobs:
       - uses: sigstore/cosign-installer@59acb6260d9c0ba8f4a2f9d9b48431a222b68e20 # v3.5.0
 
       - name: Download initial root
-        run: curl -o root.json ${STAGING_URL}/11.root.json
+        run: curl -o root.json ${STAGING_URL}/10.root.json
 
       - name: Test published repository with cosign
         run: |
