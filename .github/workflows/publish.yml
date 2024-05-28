@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: build-and-upload-repository
-        uses: jku/tuf-on-ci/actions/upload-repository@use-delegation-tree-in-build-repository # test bug fix
+        uses: theupdateframework/tuf-on-ci/actions/upload-repository@a486e2d6fcf93af4cb0f479e6a280f34125647d6 # v0.10.0
         with:
           gh_pages: true
           ref: ${{ inputs.ref }}
