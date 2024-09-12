@@ -2,7 +2,7 @@
  "signatures": [
   {
    "keyid": "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81",
-   "sig": "30450220159ef9c925dc79f7a86dd67b17127819b8f179ae10cd776b1b0d8f78f0e2e5ca022100ac99a5c0139d1f205359840f901374687061ede0f97326bd843ba217978fac5b"
+   "sig": ""
   }
  ],
  "signed": {
@@ -32,7 +32,7 @@
     }
    ]
   },
-  "expires": "2024-10-17T13:29:18Z",
+  "expires": "2024-12-12T13:32:15Z",
   "spec_version": "1.0",
   "targets": {
    "artifact.pub": {
@@ -140,7 +140,7 @@
     "length": 7014
    }
   },
-  "version": 11,
+  "version": 12,
   "x-tuf-on-ci-expiry-period": 91,
   "x-tuf-on-ci-signing-period": 35
  }
